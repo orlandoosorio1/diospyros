@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/motion/Reveal";
 import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
 import { Kicker } from "@/components/ui/Kicker";
@@ -6,12 +7,16 @@ import { originOfDiospyros } from "@/content/siteContent";
 
 export function OriginOfDiospyros() {
   return (
-    <Section backgroundColor="bg-green" tone="dark" className="py-24 md:py-32">
+    <Section backgroundColor="bg-green" tone="dark" padding="loose">
       <Container>
-        <Kicker className="mb-8">{originOfDiospyros.kicker}</Kicker>
-        <Heading size="xl" className="max-w-4xl">
-          {originOfDiospyros.quote}
-        </Heading>
+        <Reveal className="mb-8">
+          <Kicker>{originOfDiospyros.kicker}</Kicker>
+        </Reveal>
+        <Reveal index={1}>
+          <Heading size="xl" className="max-w-4xl">
+            {originOfDiospyros.quote}
+          </Heading>
+        </Reveal>
       </Container>
     </Section>
   );

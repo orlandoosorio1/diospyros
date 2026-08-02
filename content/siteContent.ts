@@ -1,11 +1,22 @@
+import darkEbony1 from "@/public/images/diospyros-dark-ebony-1.jpg";
+import darkEbony2 from "@/public/images/diospyros-dark-ebony-2.jpg";
+import darkEbony3 from "@/public/images/diospyros-dark-ebony-3.jpg";
+import lightEbony1 from "@/public/images/diospyros-light-ebony-1.jpg";
+import persimmonTree from "@/public/images/persimmon-tree.jpg";
+
 export interface Trait {
   title: string;
   body: string;
 }
 
+// Reused directly (not just via `symbolOfGrowth.backgroundImage` below) as
+// the faint texture background in InvestmentApproach — same static import,
+// no duplicated asset path.
+export { lightEbony1 };
+
 export const hero = {
   logo: "/logos/diospyros-logo-white.svg",
-  backgroundImage: "/images/diospyros-dark-ebony-1.jpg",
+  backgroundImage: darkEbony1,
   heading: ["Enduring capital.", "Earned over time."],
   paragraphs: [
     "Direct investments in private companies and real assets.",
@@ -55,7 +66,7 @@ export const originOfDiospyros = {
 };
 
 export const enduringMaterial = {
-  backgroundImage: "/images/diospyros-dark-ebony-2.jpg",
+  backgroundImage: darkEbony2,
   kicker: ["From Enduring Material", "to Enduring Capital"],
   paragraphs: [
     "For more than four decades, our founder worked with Diospyros celebica and Diospyros ebenum, among the most exacting hardwoods in the world.",
@@ -65,7 +76,7 @@ export const enduringMaterial = {
 };
 
 export const symbolOfGrowth = {
-  backgroundImage: "/images/diospyros-light-ebony-1.jpg",
+  backgroundImage: lightEbony1,
   kicker: "A Symbol of Growth",
   heading: "Fruit, grain, and growth—Diospyros virginiana",
   paragraphs: [
@@ -82,7 +93,7 @@ export const symbolOfGrowth = {
 };
 
 export const ourValues = {
-  backgroundImage: "/images/persimmon-tree.jpg",
+  backgroundImage: persimmonTree,
   kicker: "Our Values",
   heading: "Built from craft. Guided by discipline.",
   intro:
@@ -112,7 +123,7 @@ export const ourValues = {
 };
 
 export const footer = {
-  backgroundImage: "/images/diospyros-dark-ebony-3.jpg",
+  backgroundImage: darkEbony3,
   logo: "/logos/diospyros-logo-white.svg",
   heading: "Get in touch",
   contactHeading: "Direct inquiries",
