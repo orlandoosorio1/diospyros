@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand colors */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dusty-orange: #af7b67;
+  --color-green: #7a8475;
+  --color-warm-gray: #d6ccc5;
+
+  /* Typography */
+  --font-display: var(--font-heading), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system,
+    sans-serif;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+}
